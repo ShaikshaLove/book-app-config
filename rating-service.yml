@@ -6,4 +6,13 @@ spring:
   mongodb:
    uri: mongodb+srv://orange:orange123@cluster0-xero4.mongodb.net/test?retryWrites=true
    database: MyDB
+   
+eureka:
+ client:
+  register-with-eureka=true
+  fetch-registry=true
+  serviceUrl:
+   defaultZone: http://localhost:8761/eureka/
+ instance:
+  hostname: localhost
  
